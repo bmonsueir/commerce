@@ -1,4 +1,8 @@
 <template name = "products">
     <h1>Browse our product line</h1>
-    
+    {{#with items}}
+     {{#each items}}
+        {{name}} <img src = "{{picture}}"> {{describe}} ${{cost}}
+    {{/each}}
+    {{/with}}
 </template>

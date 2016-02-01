@@ -24,3 +24,5 @@ accounts-password
 accounts-ui
 mrt:jquery-masonry
 iron:router
+cfs:standard-packages
+cfs:filesystem

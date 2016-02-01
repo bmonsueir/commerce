@@ -3,16 +3,16 @@
   <div class="container">
     <ul class="nav navbar-nav navbar-left">
         
-        <li ><a href="{{pathFor 'home'}}">Home</a></li>
-        <li ><a href="{{pathFor 'about'}}">About</a></li>
+        <li class = "navigation"><a href="{{pathFor 'home'}}">Home</a></li>
+        <li class = "navigation"><a href="{{pathFor 'about'}}">About</a></li>
         
-        <li ><a href="{{pathFor 'products'}}">Browse</a></li>
-        <li ><a href="{{pathFor 'cart'}}" >My Cart</a></li>
-        <li ><a href="{{pathFor 'account'}}" >My Account</a></li>
+        <li class = "navigation"><a href="{{pathFor 'products'}}">Browse</a></li>
+        <li class = "navigation"><a href="{{pathFor 'cart'}}" >My Cart</a></li>
+        <li class = "navigation"><a href="{{pathFor 'account'}}" >My Account</a></li>
         {{#if admin}}
-         <li ><a href="{{pathFor 'admin'}}" >Admin</a></li>
+            <li class = "admin"><a href="{{pathFor 'admin'}}" >Admin</a></li>
         {{/if}}
-        <li>{{> loginButtons}}</li>
+        <li class = "login">{{> loginButtons}}</li>
       </ul>
   </div>
 </div>
