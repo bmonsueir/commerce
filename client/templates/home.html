@@ -1,15 +1,39 @@
 <template name = "home">
-<h1 class = "text-center">Welcome to our store</h1>
-<div class = "container-fluid">
-    <div class = "row"> 
-       <div class = "text-center">
-           <img src = "foamer.gif" title = "Foamers in assorted flavors">
-           <p>Luxurious thick foam</p>
-       </div>
-        <div class = "text-center">
-           <img src = "nonfoamer.jpg" title = "Gels in assorted flavors">
-           <p>Several sizes available</p>
-       </div>
-    </div>
-</div>
+   <h1 class = "text-center">Welcome to our store</h1>
+<div class = "container">
+       <div class="row">
+           <div class = "col-md-5">
+               <img src = "foamer.gif" title = "Foamers in assorted flavors"><br>
+               <p class = "text-center">Luxurious thick foam</p><br>
+              
+           </div>
+           <div class = "col-md-2">
+              
+            </div>
+            <div class = "col-md-5">
+               <img src = "nonfoamer.jpg" title = "Gels in assorted flavors"><br>
+               <p class = "text-center">Several sizes available</p><br>
+              
+           </div>
+        
+        </div>
+        
+        <div class="row">
+           <div class = "col-md-5">
+             
+               
+               <p class = "text-center"><button class = "btn btn-info btnFoam">Shop for Foamers</button></p>
+           </div>
+           <div class = "col-md-2">
+               <button class = "btn btn-danger btnAll">Shop for All</button>
+            </div>
+            <div class = "col-md-5">
+              
+               <p class = "text-center"><button class = "btn btn-info btnGel">Shop for Gels</button></p>
+           </div>
+        
+        </div>
+         
+         
+        </div>
 </template>

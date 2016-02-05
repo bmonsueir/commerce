@@ -1,17 +1,14 @@
-// Template.home.helpers({
-//     items: function () {
-//       var items = Product.find().fetch;
-//       var item = [];
-//       for (var i in items){
-//               item.push({
-//                   name: items[i].name,
-//                   description: items[i].description,
-//                   image: items[i].image,
-//                   cost: items[i].cost
-//               });
+Template.home.events({
+    "click .btnFoam": function(event){
+        Router.go('products', {type: "foam"});
+    },
     
-//       }
-//       return item;
-//     }
+     "click .btnGel": function(event){
+        Router.go('products', {type: "gel"});
+    },
     
-// });
+     "click .btnAll": function(event){
+        Router.go('products', {type: "all"});
+    }
+    
+});

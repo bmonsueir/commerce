@@ -6,7 +6,7 @@ Accounts.ui.config({
 Template.nav.helpers({
     admin: function(){
         var username = Meteor.user().username;
-        if(username == "bill"){
+        if(username == "bill" || username == "chris" || username == "ryan"){
             return true;
         } else {
             return false;

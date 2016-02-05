@@ -1,8 +1,17 @@
 <template name = "products">
-    <h1>Browse our product line</h1>
-    {{#with items}}
+    <div class = "container">
+    <h1 class = "text-center">Browse our product line</h1>
+ 
      {{#each items}}
-        {{name}} <img src = "{{picture}}"> {{describe}} ${{cost}}
+    <div class="col-sm-4">
+        <div class = "product">
+        <h4 class = "text-center">{{name}}</h4>
+        <img src = "{{picture}}" onError="this.onerror=null;this.src='nonfoamer.jpg';">
+        <p>{{description}}  for only ${{cost}}</p>
+        <button class = "btn btn-danger buyMe">Buy Me</button>
+        </div>
+    </div>
     {{/each}}
-    {{/with}}
+    </div>
+  
 </template>

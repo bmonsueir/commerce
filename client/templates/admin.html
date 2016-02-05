@@ -1,14 +1,18 @@
 <template name = "admin">
-    <h1>Administration</h1>
+   <div class = "container">
+     
+   <h1 class = "text-center">Administration</h1>
    <div class = "well">
         <h3>Add New Product</h3>
         <form class = "addproduct">
           Product name: <input type="text" name="name"><br>
           Picture url: <input type="text" name="picture"><br>
+          Type: (gel, foam or flavor) <input type = "text" name = "type"><br>
           Cost: <input type="text" name="cost"><br>
-          Description: <input type="text" name="describe"><br>
+          Description: <input type="text" name="description"><br>
           <input type="submit" value="Submit">
         </form>
     </div>
+    </div> 
     
 </template>

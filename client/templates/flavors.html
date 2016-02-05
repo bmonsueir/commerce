@@ -1,0 +1,15 @@
+<template name = "flavors">
+    <div class = "container">
+        <h1 class = "text-center">Pick A Flavor</h1>
+        {{#each flavor}}
+        <div class = "col-sm-2">
+            <div class = "product">
+            <button class = "btn btn-info">{{name}}</button><br>
+            {{description}}
+         
+           </div> 
+        </div>
+        {{/each}}
+    </div>
+    
+</template>

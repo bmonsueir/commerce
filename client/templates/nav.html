@@ -1,20 +1,24 @@
 <template name = "nav">
-   <div class="navbar navbar-default navbar-static-top">
-  <div class="container">
-    <ul class="nav navbar-nav navbar-left">
-        
-        <li class = "navigation"><a href="{{pathFor 'home'}}">Home</a></li>
-        <li class = "navigation"><a href="{{pathFor 'about'}}">About</a></li>
-        
-        <li class = "navigation"><a href="{{pathFor 'products'}}">Browse</a></li>
-        <li class = "navigation"><a href="{{pathFor 'cart'}}" >My Cart</a></li>
-        <li class = "navigation"><a href="{{pathFor 'account'}}" >My Account</a></li>
+  
+  <div class = "container">
+  <nav class = "navbar navbar-inverse">
+  
+  
+    <ul class = "nav navbar-nav">
+        <li><a class = "navbar-brand navbar-header" href ="{{pathFor 'home'}}">Perfect Friction</a></li>
+        <li><a href ="{{pathFor 'home'}}">Home</a></li>
+        <li><a href ="{{pathFor 'about'}}">About</a></li>
+        <li><a href ="{{pathFor 'products'}}">Browse</a></li>
+    </ul>
+    <ul class = "nav navbar-nav navbar-right">
+         <li><a href = "{{pathFor 'cart'}}" >My Cart</a></li>
+         <li><a href = "{{pathFor 'account'}}" >My Account</a></li>
         {{#if admin}}
             <li class = "admin"><a href="{{pathFor 'admin'}}" >Admin</a></li>
         {{/if}}
         <li class = "login">{{> loginButtons}}</li>
-      </ul>
-  </div>
-</div>
-    
+     </ul>
+
+</nav>
+  </div>    
 </template>

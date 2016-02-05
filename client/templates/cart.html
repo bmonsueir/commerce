@@ -1,6 +1,34 @@
 <template name = "cart">
-    <h1>My Cart</h1>
+    <h1 class = "text-center">My Cart</h1>
+    <div class = "container">
+    <div class = "well">
+        <h2>My selections</h2>
+    
     {{#each items}}
-    {{ product}}
+    {{product}} with {{flavor}} @ {{cost}}<br>
     {{/each}}
+    </div>
+    <div class = "well">
+        <h3>Ship to:</h3>
+        {{first}} {{last}}<br>
+        {{address}}<br>
+        {{city}}, {{state}} {{zip}}
+    </div>
+    <div class = "well">
+    <h4>Cost</h4>
+    {{#if subTotal}}
+    Subtotal: {{subTotal}}<br>
+    Tax: {{tax}}<br>
+    Shipping: {{shipping}}<br>
+    Total: {{total}}
+    {{else}}
+    BUY SOMETHING
+    {{/if}}
+    </div>
+    <div>
+        {{#if total}}
+        <button class = "btn btn-danger">Submit</button>
+        {{/if}}
+    </div>
+    </div>
 </template>

@@ -1,8 +1,4 @@
-.nav{
-    line-height: 50px;
-    display: block;
-    
-}
+
 body {
     background: #fc00ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(right, #FC00FF , #00DBDE);  /* Chrome 10-25, Safari 5.1-6 */
@@ -19,15 +15,41 @@ h1{
 button{
     margin: 20px;
 }
-div{
-    margin: 5px;
-}
+
 input{
     margin: 20px; 
 
 }
-img{
-    width: 200px;
-    height: 200px;
-    margin: 20px;
+imgHome{
+    width: 90%;
+    margin: 4%;
+    border-radius: 100px;
+}
+.login{
+    line-height: 40px;
+    display: block;
+}   
+
+.btn{
+    border-radius: 20px;
+}
+.jumbotron{
+    background-color: #BBBBBB;
+}
+.seperator{
+    height:15px;
+}
+.foot{
+    border: 1px dotted red;
+}
+.footHead{
+    font-weight: bold;
+}
+.imgBrowse{
+    
+}
+.product{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
 }
